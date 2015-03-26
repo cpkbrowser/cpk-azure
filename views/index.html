@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html manifest="http://www.cpkbrowser.com/manifest.appcache" class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+  		<title>CPK Browser</title>
+  		<meta name="description" content="Watch Free TV and Movies from anywhere in the world. Sign Up Now and Tell Your Friends to Cancel their Cable!">
+		<meta name="keywords" content="free, watch, tv, movies, cpk, browser, videos, seasons, episodes, online, latest, shows, mobile, entertainment">
+		<meta name="author" content="CPK Browser">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no"></meta>
+
+		<!--<script src="/javascripts/jquery-1.11.0.min.js"></script>-->
+		<script src="/javascripts/jquery.js"></script>
+		<script src="/javascripts/jquery-ui.js"></script>
+
+		<!-- signup js -->
+		<script type="text/javascript" src="/javascripts/jquery.inputfocus-0.9.min.js"></script>
+    	<script type="text/javascript" src="/javascripts/signup.js"></script>
+
+        <!-- Latest compiled and minified CSS : Template CSS -->
+        <link rel="stylesheet" href="/stylesheets/editor-style.css">
+
+        <!-- Latest compiled and minified CSS : Template CSS -->
+        <link rel="stylesheet" href="/stylesheets/main.min.css">
+
+        <!-- font awesome cdn -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Updates for CSS : Outside of template CSS -->
+        <link rel="stylesheet" href="/stylesheets/override.css?nocache01231501">
+		
+		<link rel="stylesheet" href="/stylesheets/loader.css">
+		<link rel="stylesheet" href="/stylesheets/simplemodal.css">
+		<link rel="stylesheet" href="/stylesheets/jquery-ui.css">
+		<link rel="stylesheet" href="/stylesheets/jquery-ui.theme.css">
+		<link rel="stylesheet" href="http://www.cpkbrowser.com/disruption-notice.css">
+
+        <!-- Latest compiled and minified JavaScript for bootstrap stuff -->
+        <script src="/javascripts/scripts.min.js"></script>
+
+        <!-- Kyle's JS code -->		
+		<script src="/javascripts/jquery.simplemodal.js"></script>
+		<script src="/javascripts/simplemodal-procs.js"></script>
+		<script src="/javascripts/generic_bin.js"></script>
+		<script src="/javascripts/cpkBins.js?nocache01231501"></script>
+    	<script src="/javascripts/basic.js?nocache01231501"></script>
+    	<script src="/javascripts/Plug_PW.js?nocache01231501"></script>
+		<script src="/javascripts/jq-marquee2.js"></script>
+		
+		<!-- Favicons for all devices -->
+		<link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#ff0000"></meta>
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png"></meta>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- splash pages for all devices -->
+		<link rel="apple-touch-startup-image" href="/images/splash//splash-320-460.jpg" media="screen and (max-device-width : 320px)">
+
+		<link rel="apple-touch-startup-image" href="/images/splash//splash-640-920.jpg" media="(max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2)">
+
+		<link rel="apple-touch-startup-image" href="/images/splash//splash-640-1096.jpg" media="(max-device-width : 548px) and (-webkit-min-device-pixel-ratio : 2)">
+
+		<link rel="apple-touch-startup-image" sizes="1024x748" href="/images/splash//splash-1024-748.jpg" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)">
+
+		<link rel="apple-touch-startup-image" sizes="768x1004" href="/images/splash//splash-768-1004.jpg" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)">
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-57404581-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>	
+	
+	</head>
+	
+    <body>
+    <header id="hdrAll" class="banner navbar navbar-default navbar-static-top" role="banner">		  
+          <div id="srchbarContainer" class="container">
+              <a href="/">
+              <div class="logo">
+              </div>
+              </a>
+              <input class="search" id="btnSearch" type="text" data-provide="typeahead" placeholder="Search...">
+              <!-- Submit button -->
+              <div class="submit-search">
+			  <button id="btnSrchSubmit" type="button" class="btn btn-default submit-button"><i class="fa fa-search search-icon"></i></button>
+			  </div>
+              <div class="input-group-btn">
+                <button id="btnCatMenu" onclick="btnCatMenu_Click();" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></button>
+                <ul id="catMenu_Options" style="display: none;" class="dropdown-menu keep-open dropdown-menu-left search-options" role="menu">
+                  <form id="frmBinCategories">
+                    <div style="padding-top: 5px; padding-left: 5px;"> <!-- channels padding wrap -->
+						<!-- Start of Channels -->
+						<div class="row">
+							<div class="col-sm-11">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatANA" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//ActionAdventure.jpg" onclick="imgCategoryBin_Click('#imgCatANA');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatAdult" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//AdultCartoons.jpg" onclick="imgCategoryBin_Click('#imgCatAdult');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatCMD" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//Comedy.jpg" onclick="imgCategoryBin_Click('#imgCatCMD');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatDNM" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//DateNightFinal.jpg" onclick="imgCategoryBin_Click('#imgCatDNM');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatDOC" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//Docs.jpg" onclick="imgCategoryBin_Click('#imgCatDOC');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatFGM" class="channel-img-wrap Inactive_Category">
+												<img class="channels " src="/images/channels//FeelGood.jpg" onclick="imgCategoryBin_Click('#imgCatFGM');"></img>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container modal-bottom-channel">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatKids" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//ForKids.jpg" onclick="imgCategoryBin_Click('#imgCatKids');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatMusic" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//LiveMusic.jpg" onclick="imgCategoryBin_Click('#imgCatMusic');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatNWR" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//NewReleases.jpg" onclick="imgCategoryBin_Click('#imgCatNWR');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatPPVS" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//PaperView.jpg" onclick="imgCategoryBin_Click('#imgCatPPVS');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatHBO" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//PremireShows.jpg" onclick="imgCategoryBin_Click('#imgCatHBO');"></img>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-4 col-xs-6 padding-off">
+											<div id="imgCatSCI" class="channel-img-wrap Inactive_Category">
+												<img class="channels" src="/images/channels//SciFi.jpg" onclick="imgCategoryBin_Click('#imgCatSCI');"></img>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-1">
+								<div class="confirm-channel-wrap">
+									<div class="row">
+										<a id="cancelAddCategoryBins" class="apply-channels cancel-btn btn-primary" style="cursor: pointer; display: none;" class="btn-primary sign-cred-btn">Cancel</a>
+									</div>
+									<div class="row">
+										<a id="okAddCategoryBins" class="apply-channels btn-primary apply-ok-style" style="cursor: pointer; display: none;" class="btn-primary sign-cred-btn">OK</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- End of Channels -->
+					</div> <!-- channels padding wrap -->
+                  </form>
+                </ul>
+				<div id="hdnBinCategoryList" style="display: none;"></div>
+              </div><!-- /btn-group -->
+            <div id="divUserAccess" class="navbar-header">              
+                <!-- Sign In / Up drop down menu -->
+                <ul class="nav pull-right login-buttons">
+                  <li><a id="btnSignUp" style="cursor: pointer;" class="btn-primary sign-cred-btn">Sign Up</a></li>
+                  <li class="divider-vertical"></li>
+                  <li class="drop down">
+                    <a class="dropdown-toggle btn-primary sign-cred-btn" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                    <div id="ddlLogin" class="dropdown-menu login" style="padding: 15px; padding-bottom: 10px;">
+                                  <!-- Login form here -->
+                      <form id="frmUser" action="/" method="post" accept-charset="UTF-8">
+                          <input id="user_username" placeholder="Login" style="margin-bottom: 15px;" type="text" name="username" size="30" />
+                          <input id="user_password" placeholder="Password" style="margin-bottom: 15px;" type="password" name="password" size="30" />
+                          <p id="pFailedLogin" class="failed-login">Login Unsuccessful</p>
+						  <input id="user_remember_me" class="remember-me" style="float: left; margin-right: 10px;" type="checkbox" name="remember_me" value="0" />			  
+                          <label class="string optional" for="remember_me"> Remember me</label>
+                          <input id="btnLogin" class="btn btn-primary btnUserLogin" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="button" name="commit" value="Sign In" />
+                      </form>
+					  <div id="hdnUserCookieExists" style="display: none;">false</div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+			<div id="divUserMenu" style="display:none;" class="navbar-header">              
+                <!-- Documents / Log Out drop down menu -->
+                <ul class="nav pull-right login-buttons">
+				  <li><a id="btnSignOut" class="btn-primary sign-cred-btn" style="cursor: pointer;">Log Out</a></li>
+                  <li class="divider-vertical"></li>
+                  <li class="drop down">
+                    <a id="btnMoreStuff" style="cursor: pointer;" data-toggle="dropdown" class="btn-primary sign-cred-btn">&nbsp;More <strong class="caret"></strong></a>
+                    <!-- <div id="ddlMoreStuff" class="dropdown-menu login" style="padding: 15px; padding-bottom: 10px;"> -->
+					<div id="ddlMoreStuff" class="dropdown-menu login">
+						<div style="height: 28px; width: 100%; text-align: center; border-top: 1px solid red; cursor: pointer;">
+							<p style="text-align: center; vertical-align: middle; padding-top: 6px;" onclick="openCPKLinks('cpkpoints1')">Earn Points!</p>						
+						</div>
+						<!-- <div style="height: 28px; width: 100%; text-align: center; border-top: 1px solid red; cursor: pointer;">
+							<p style="text-align: center; vertical-align: middle; padding-top: 4px;" onclick="openCPKLinks('cpkpoints1')">CPK Lens</p>						
+						</div> -->
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+              
+            </nav>
+          </div>
+		  <div id="dn-container" style="padding-top: 10px;">
+			<div class="disruption-notice">			
+			</div>
+		  </div>			
+        </header>
+
+        <!--Content Section-->
+        <div id="vidGridContainer" class="vid-grid" style="display: none;">		
+			<!--SearchResults-->
+			<div id="grdSrchResults" style="display: none;">
+				<div id="srch_preLoader">
+					<!-- <img src="/images//loader.gif" alt="img not found" id="loader1" height="80" width="80" style="display: block; margin-left: auto; margin-right: auto;" /> -->
+					<div class="loader">loading</div> 
+				</div>
+				<div id="hdnLoadResults" style="display: none;">
+					<div class="section">
+						<h4 class="section-head">Search Results</h4>
+						<hr class="section">
+					</div>
+					<div class="row">
+						<div id="srchItem_container0" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img0" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n0">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu0">
+												<div id="srchItem_btnInfo0" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv0" style="display: none;">
+													<p id="srchItem_hdnName0"></p>
+													<p id="srchItem_hdnImg0"></p>
+													<p id="srchItem_hdnDesc0"></p>
+													<p id="srchItem_hdnGenre0"></p>
+													<p id="srchItem_hdnYear0"></p>
+													<p id="srchItem_hdnLink0"></p>
+												</div>											
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav0" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srchItem_container1" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img1" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n1">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu1">
+												<div id="srchItem_btnInfo1" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv1" style="display: none;">
+													<p id="srchItem_hdnName1"></p>
+													<p id="srchItem_hdnImg1"></p>
+													<p id="srchItem_hdnDesc1"></p>
+													<p id="srchItem_hdnGenre1"></p>
+													<p id="srchItem_hdnYear1"></p>
+													<p id="srchItem_hdnLink1"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav1" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srchItem_container2" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img2" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n2">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu2">
+												<div id="srchItem_btnInfo2" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv2" style="display: none;">
+													<p id="srchItem_hdnName2"></p>
+													<p id="srchItem_hdnImg2"></p>
+													<p id="srchItem_hdnDesc2"></p>
+													<p id="srchItem_hdnGenre2"></p>
+													<p id="srchItem_hdnYear2"></p>
+													<p id="srchItem_hdnLink2"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav2" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div id="srchItem_container3" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img3" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n3">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu3">
+												<div id="srchItem_btnInfo3" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv3" style="display: none;">
+													<p id="srchItem_hdnName3"></p>
+													<p id="srchItem_hdnImg3"></p>
+													<p id="srchItem_hdnDesc3"></p>
+													<p id="srchItem_hdnGenre3"></p>
+													<p id="srchItem_hdnYear3"></p>
+													<p id="srchItem_hdnLink3"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav3" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srchItem_container4" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img4" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n4">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu4">
+												<div id="srchItem_btnInfo4" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv4" style="display: none;">
+													<p id="srchItem_hdnName4"></p>
+													<p id="srchItem_hdnImg4"></p>
+													<p id="srchItem_hdnDesc4"></p>
+													<p id="srchItem_hdnGenre4"></p>
+													<p id="srchItem_hdnYear4"></p>
+													<p id="srchItem_hdnLink4"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav4" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srchItem_container5" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="srchItem_img5" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="srchItem_n5">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="srch_dropdownMenu5">
+												<div id="srchItem_btnInfo5" class="btn-primary-txt">Info
+												</div>
+												<div id="srchItem_hdnDiv5" style="display: none;">
+													<p id="srchItem_hdnName5"></p>
+													<p id="srchItem_hdnImg5"></p>
+													<p id="srchItem_hdnDesc5"></p>
+													<p id="srchItem_hdnGenre5"></p>
+													<p id="srchItem_hdnYear5"></p>
+													<p id="srchItem_hdnLink5"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="srchItem_btnFav5" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end of row-->					
+					<div id="srchItem_getMore" style="cursor: pointer;" class="more-arrow">
+						<p><i class="fa fa-chevron-circle-left"></i></p>
+					</div>
+					<div id="srchItem_getLess" style="cursor: pointer;" class="more-arrow">
+						<p><i class="fa fa-chevron-circle-right"></i></p>
+					</div>
+				</div>
+				<p id="hdnRsltSetCounter" style="display: none;">0</p>
+				<p id="hdnRsltSetLoaded" style="display: none;">false</p>
+			</div>
+			<div id="binCategoryContainer2" style="position: relative; display: none;"></div>
+			<div id="binCategoryContainer" style="position: relative; display: none;">
+				<!--PopularOnCPKBrowser-->
+				<div id="grdPopularOnCPK">
+					<div class="section">
+						<h4 class="section-head">Popular on CPK Browser</h4>
+						<hr class="section">
+					</div>
+					<div class="row">
+						<div id="popItem_container0" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img0" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n0">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" id="pop_dropdownMenu0">
+												<div id="popItem_btnInfo0" class="btn-primary-txt">Info
+												</div>
+												<div id="popItem_hdnDiv0" style="display: none;">
+													<p id="popItem_hdnName0"></p>
+													<p id="popItem_hdnImg0"></p>
+													<p id="popItem_hdnDesc0"></p>
+													<p id="popItem_hdnGenre0"></p>
+													<p id="popItem_hdnYear0"></p>
+													<p id="popItem_hdnLink0"></p>
+													<p id="popItem_hdnType0"></p>
+													<p id="popItem_hdnActors0"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav0" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="popItem_container1" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img1" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n1">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" id="pop_dropdownMenu1">
+												<div id="popItem_btnInfo1">Info
+												</div>
+												<div id="popItem_hdnDiv1" style="display: none;">
+													<p id="popItem_hdnName1"></p>
+													<p id="popItem_hdnImg1"></p>
+													<p id="popItem_hdnDesc1"></p>
+													<p id="popItem_hdnGenre1"></p>
+													<p id="popItem_hdnYear1"></p>
+													<p id="popItem_hdnLink1"></p>
+													<p id="popItem_hdnType1"></p>
+													<p id="popItem_hdnActors1"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav1" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="popItem_container2" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img2" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n2">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="pop_dropdownMenu2">
+												<div id="popItem_btnInfo2" class="btn-primary-txt">Info
+												</div>
+												<div id="popItem_hdnDiv2" style="display: none;">
+													<p id="popItem_hdnName2"></p>
+													<p id="popItem_hdnImg2"></p>
+													<p id="popItem_hdnDesc2"></p>
+													<p id="popItem_hdnGenre2"></p>
+													<p id="popItem_hdnYear2"></p>
+													<p id="popItem_hdnLink2"></p>
+													<p id="popItem_hdnType2"></p>
+													<p id="popItem_hdnActors2"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav2" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="popItem_container3" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img3" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n3">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="pop_dropdownMenu3">
+												<div id="popItem_btnInfo3" class="btn-primary-txt">Info
+												</div>
+												<div id="popItem_hdnDiv3" style="display: none;">
+													<p id="popItem_hdnName3"></p>
+													<p id="popItem_hdnImg3"></p>
+													<p id="popItem_hdnDesc3"></p>
+													<p id="popItem_hdnGenre3"></p>
+													<p id="popItem_hdnYear3"></p>
+													<p id="popItem_hdnLink3"></p>
+													<p id="popItem_hdnType3"></p>
+													<p id="popItem_hdnActors3"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav3" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="popItem_container4" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img4" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n4">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="pop_dropdownMenu4">
+												<div id="popItem_btnInfo4" class="btn-primary-txt">Info
+												</div>
+												<div id="popItem_hdnDiv4" style="display: none;">
+													<p id="popItem_hdnName4"></p>
+													<p id="popItem_hdnImg4"></p>
+													<p id="popItem_hdnDesc4"></p>
+													<p id="popItem_hdnGenre4"></p>
+													<p id="popItem_hdnYear4"></p>
+													<p id="popItem_hdnLink4"></p>
+													<p id="popItem_hdnType4"></p>
+													<p id="popItem_hdnActors4"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav4" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="popItem_container5" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="popItem_img5" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="popItem_n5">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="pop_dropdownMenu5">
+												<div id="popItem_btnInfo5" class="btn-primary-txt">Info
+												</div>
+												<div id="popItem_hdnDiv5" style="display: none;">
+													<p id="popItem_hdnName5"></p>
+													<p id="popItem_hdnImg5"></p>
+													<p id="popItem_hdnDesc5"></p>
+													<p id="popItem_hdnGenre5"></p>
+													<p id="popItem_hdnYear5"></p>
+													<p id="popItem_hdnLink5"></p>
+													<p id="popItem_hdnType5"></p>
+													<p id="popItem_hdnActors5"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="popItem_btnFav5" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end of row-->
+					<div id="Popular_MoreItems">
+						<div id="popItem_getMore" onclick="getMore_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-left"></i></p>
+						</div>
+						<div id="popItem_getLess" onclick="getLess_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-right"></i></p>
+						</div>
+						<p id="hdnPopSetCounter" style="display: none;">0</p>
+						<p id="hdnPopSetLoaded" style="display: none;">false</p>
+					</div>						
+				</div>
+			
+				<!--Favorites-->
+				<div id="grdFavorites">
+					<div class="section">
+						<h4 class="section-head">Favorites</h4>
+						<hr class="section">
+					</div>
+					<div class="row">
+						<div id="favItem_container0" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img0" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n0">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu0">
+												<div id="favItem_btnInfo0" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv0" style="display: none;">
+													<p id="favItem_hdnName0"></p>
+													<p id="favItem_hdnImg0"></p>
+													<p id="favItem_hdnDesc0"></p>
+													<p id="favItem_hdnGenre0"></p>
+													<p id="favItem_hdnYear0"></p>
+													<p id="favItem_hdnLink0"></p>
+													<p id="favItem_hdnType0"></p>
+													<p id="favItem_hdnActors0"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav0" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="favItem_container1" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img1" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n1">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu1">
+												<div id="favItem_btnInfo1" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv1" style="display: none;">
+													<p id="favItem_hdnName1"></p>
+													<p id="favItem_hdnImg1"></p>
+													<p id="favItem_hdnDesc1"></p>
+													<p id="favItem_hdnGenre1"></p>
+													<p id="favItem_hdnYear1"></p>
+													<p id="favItem_hdnLink1"></p>
+													<p id="favItem_hdnType1"></p>
+													<p id="favItem_hdnActors1"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav1" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="favItem_container2" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img2" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n2">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu2">
+												<div id="favItem_btnInfo2" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv2" style="display: none;">
+													<p id="favItem_hdnName2"></p>
+													<p id="favItem_hdnImg2"></p>
+													<p id="favItem_hdnDesc2"></p>
+													<p id="favItem_hdnGenre2"></p>
+													<p id="favItem_hdnYear2"></p>
+													<p id="favItem_hdnLink2"></p>
+													<p id="favItem_hdnType2"></p>
+													<p id="favItem_hdnActors2"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav2" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="favItem_container3" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img3" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n3">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu3">
+												<div id="favItem_btnInfo3" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv3" style="display: none;">
+													<p id="favItem_hdnName3"></p>
+													<p id="favItem_hdnImg3"></p>
+													<p id="favItem_hdnDesc3"></p>
+													<p id="favItem_hdnGenre3"></p>
+													<p id="favItem_hdnYear3"></p>
+													<p id="favItem_hdnLink3"></p>
+													<p id="favItem_hdnType3"></p>
+													<p id="favItem_hdnActors3"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav3" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="favItem_container4" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img4" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n4">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu4">
+												<div id="favItem_btnInfo4" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv4" style="display: none;">
+													<p id="favItem_hdnName4"></p>
+													<p id="favItem_hdnImg4"></p>
+													<p id="favItem_hdnDesc4"></p>
+													<p id="favItem_hdnGenre4"></p>
+													<p id="favItem_hdnYear4"></p>
+													<p id="favItem_hdnLink4"></p>
+													<p id="favItem_hdnType4"></p>
+													<p id="favItem_hdnActors4"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav4" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="favItem_container5" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="favItem_img5" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="favItem_n5">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="fav_dropdownMenu5">
+												<div id="favItem_btnInfo5" class="btn-primary-txt">Info
+												</div>
+												<div id="favItem_hdnDiv5" style="display: none;">
+													<p id="favItem_hdnName5"></p>
+													<p id="favItem_hdnImg5"></p>
+													<p id="favItem_hdnDesc5"></p>
+													<p id="favItem_hdnGenre5"></p>
+													<p id="favItem_hdnYear5"></p>
+													<p id="favItem_hdnLink5"></p>
+													<p id="favItem_hdnType5"></p>
+													<p id="favItem_hdnActors5"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="favItem_btnFav5" onclick="send_cpkDropFav(this);" class="btn-primary btn-props addtofav">
+												<a style="cursor: pointer;">
+													-Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--end of row-->
+					<div id="Favorites_MoreItems">
+						<div id="favItem_getMore" onclick="getMore_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-left"></i></p>
+						</div>
+						<div id="favItem_getLess" onclick="getLess_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-right"></i></p>
+						</div>
+						<p id="hdnFavSetCounter" style="display: none;">0</p>
+						<p id="hdnFavSetLoaded" style="display: none;">false</p>
+						<p id="hdnFavSetMax" style="display: none;">0</p>
+					</div>
+				</div>
+	
+				<!--RecentlyWatched-->
+				<div id="grdRecentlyWatched">
+					<div class="section">
+						<h4 class="section-head">Recently Watched</h4>
+						<hr class="section">
+					</div>
+					<div class="row">
+						<div id="recItem_container0" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img0" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n0">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu0">
+												<div id="recItem_btnInfo0" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv0" style="display: none;">
+													<p id="recItem_hdnName0"></p>
+													<p id="recItem_hdnImg0"></p>
+													<p id="recItem_hdnDesc0"></p>
+													<p id="recItem_hdnGenre0"></p>
+													<p id="recItem_hdnYear0"></p>
+													<p id="recItem_hdnLink0"></p>
+													<p id="recItem_hdnType0"></p>
+													<p id="recItem_hdnActors0"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav0" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="recItem_container1" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img1" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n1">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu1">
+												<div id="recItem_btnInfo1" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv1" style="display: none;">
+													<p id="recItem_hdnName1"></p>
+													<p id="recItem_hdnImg1"></p>
+													<p id="recItem_hdnDesc1"></p>
+													<p id="recItem_hdnGenre1"></p>
+													<p id="recItem_hdnYear1"></p>
+													<p id="recItem_hdnLink1"></p>
+													<p id="recItem_hdnType1"></p>
+													<p id="recItem_hdnActors1"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav1" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="recItem_container2" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img2" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n2">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu2">
+												<div id="recItem_btnInfo2" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv2" style="display: none;">
+													<p id="recItem_hdnName2"></p>
+													<p id="recItem_hdnImg2"></p>
+													<p id="recItem_hdnDesc2"></p>
+													<p id="recItem_hdnGenre2"></p>
+													<p id="recItem_hdnYear2"></p>
+													<p id="recItem_hdnLink2"></p>
+													<p id="recItem_hdnType2"></p>
+													<p id="recItem_hdnActors2"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav2" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="recItem_container3" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img3" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n3">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu3">
+												<div id="recItem_btnInfo3" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv3" style="display: none;">
+													<p id="recItem_hdnName3"></p>
+													<p id="recItem_hdnImg3"></p>
+													<p id="recItem_hdnDesc3"></p>
+													<p id="recItem_hdnGenre3"></p>
+													<p id="recItem_hdnYear3"></p>
+													<p id="recItem_hdnLink3"></p>
+													<p id="recItem_hdnType3"></p>
+													<p id="recItem_hdnActors3"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav3" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="recItem_container4" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img4" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n4">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu4">
+												<div id="recItem_btnInfo4" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv4" style="display: none;">
+													<p id="recItem_hdnName4"></p>
+													<p id="recItem_hdnImg4"></p>
+													<p id="recItem_hdnDesc4"></p>
+													<p id="recItem_hdnGenre4"></p>
+													<p id="recItem_hdnYear4"></p>
+													<p id="recItem_hdnLink4"></p>
+													<p id="recItem_hdnType4"></p>
+													<p id="recItem_hdnActors4"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav4" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="recItem_container5" class="col-md-2 col-sm-4 col-xs-6">
+							<div class="vid-hover">
+								<div class="video-box">
+									<a class="vid-link" onclick="onClick_Img(this);"> <img id="recItem_img5" alt="No Image Found" class="vid-thumb-img img-point" src="/images//placeholder.png">
+									</img></a>
+									<div class="description">
+										<h2 class="title" id="recItem_n5">Title of Movie or Episode</h2>
+									</div>
+									<div class="row">
+										<div class="col-xs-6 button-span">
+											<div class="btn-primary btn-props" onclick="open_mdlInfo(this, 'false');" type="button" id="rec_dropdownMenu5">
+												<div id="recItem_btnInfo5" class="btn-primary-txt">Info
+												</div>
+												<div id="recItem_hdnDiv5" style="display: none;">
+													<p id="recItem_hdnName5"></p>
+													<p id="recItem_hdnImg5"></p>
+													<p id="recItem_hdnDesc5"></p>
+													<p id="recItem_hdnGenre5"></p>
+													<p id="recItem_hdnYear5"></p>
+													<p id="recItem_hdnLink5"></p>
+													<p id="recItem_hdnType5"></p>
+													<p id="recItem_hdnActors5"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 button-span">
+											<div id="recItem_btnFav5" onclick="send_cpkFavData(this);" style="text-align:center;padding:2px;" class="btn-primary addtofav">
+												<a style="cursor: pointer;">
+													+Favs
+												</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div><!--end of row-->
+					<div id="Recent_MoreItems">
+						<div id="recItem_getMore" onclick="getMore_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-left"></i></p>
+						</div>
+						<div id="recItem_getLess" onclick="getLess_Click(this);" style="cursor: pointer;" class="more-arrow">
+							<p><i class="fa fa-chevron-circle-right"></i></p>
+						</div>
+						<p id="hdnRecSetCounter" style="display: none;">0</p>
+						<p id="hdnRecSetLoaded" style="display: none;">false</p>
+						<p id="hdnRecSetMax" style="display: none;">0</p>
+					</div>
+				</div>				
+			</div>			
+		</div><!--endofvidgrid-->
+		<div id="internalLinks" class="intrinsic-container" style="display: none;">	
+			<a onclick="closeCPKInternal()">		
+				  <div class="close-profile-iframe" style="cursor: pointer;">
+						<i class="fa fa-times"></i>
+				  </div>	
+			</a>		
+			<iframe id="iframeCPK" src="about:blank" allowfullscreen frameborder="0"></iframe>
+		</div>
+		<div id="landingPage" class="land-page" style="display:block;" >
+			<div class="container story">
+				<div class="row top-landing">
+					<div class="top-landing-wrap">
+					<div class="col-sm-4">
+						<div class="supported-devices">
+							<h4 class="primary support-header">Supported Devices</h4>
+							<div class="row">
+								<div class="col-xs-4">
+									<i class="fa support-icons fa-windows"></i><br>
+									<span class="sup-title">All Windows</span>
+								</div>
+								<div class="col-xs-4">
+									<i class="fa support-icons fa-apple"></i><br>
+									<span class="sup-title">OSX and IOS</span>
+								</div>
+								<div class="col-xs-4">
+									<i class="fa support-icons fa-android"></i><br>
+									<span class="sup-title">All Android</span>
+								</div>
+							</div>
+							<div class="row">
+								<h4 class="primary support-header">Supported Browsers</h4>
+								<div class="col-xs-4">
+									<img class="social-icon" src="../img/firefox.png"><br>
+									<span class="sup-title">Mozilla Firefox</span>
+								</div>
+								<div class="col-xs-4">
+									<img class="social-icon" src="../img/chrome.png"><br>
+									<span class="sup-title">Google Chrome</span>
+								</div>
+								<div class="col-xs-4">
+									<img class="social-icon" src="../img/safari.png"><br>
+									<span class="sup-title">Safari</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="catch-phrase-main">
+							<h1 class="primary catch-phrase-main">
+							Watch Whatever<br> You Want...<br>
+							Whenever You<br>
+							Want!
+							</h1>
+						</div>
+					</div>
+					</div><!--  endofwrap -->
+				</div>
+				<div class="row signup-ad">
+					<div class="col-md-4">
+						<div class="signup-promo">
+							<a onclick="signUp_onClick();"><img class="primary-ad-img red-hover" src="../img/PhonePromo.jpg"></a>
+						</div>
+						<div class="signup-promo-mobile">
+							<a onclick="signUp_onClick();"><img class="primary-ad-img red-hover" src="../img/PhonePromoMobile.jpg"></a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h1 class="support-header bottom-landing-titles">News Updates</h1>
+						<div class="row news-feed">
+							<h4 class="primary">Support on iPad</h1>
+							<p>Most all tablets including iPad devices are now supported by CPK Browser!</p>
+							<span class="news-date">12/20/2014</span>
+						</div>
+						<div class="row news-feed">
+							<h4 class="primary">New Help Button Feature</h1>
+							<p>While navigating the external links, click the info button on the top right part of the screen for help!</p>
+							<span class="news-date">12/5/2014</span>
+						</div>
+						<div class="row news-feed">
+							<h4 class="primary">CPK Browser Beta v1.0 Released</h1>
+							<p>Started Hosting the Web App CPKBrowser.com</p>
+							<span class="news-date">12/5/2014</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h1 class="support-header bottom-landing-titles stay-connect-title">Stay Connected</h1>
+						<div class="row social-media-wrap-icons">
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="https://www.facebook.com/CPKBrowser" target="_blank"><i class="fa social-media-icons-landing fa-facebook"></i>
+							</a>
+							</div>
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="https://twitter.com/cpkbrowser" target="_blank"><i class="fa social-media-icons-landing fa-twitter"></i>
+							</a>
+							</div>
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="https://vine.co/u/1151622957391892480" target="_blank"><i class="fa social-media-icons-landing fa-vine"></i>
+							</a>
+							</div>
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="https://www.youtube.com/channel/UC08bzKvmUx3B01XShamkw0A" target="_blank"><i class="fa social-media-icons-landing fa-youtube"></i>
+							</a>
+							</div>
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="https://plus.google.com/102645977610610235205" target="_blank"><i class="fa social-media-icons-landing fa-google"></i>
+							</a>
+							</div>
+							<div class="col-xs-2">
+								<a class="social-icons-landing" href="http://www.instagram.com/cpkbrowser" target="_blank"><i class="fa social-media-icons-landing fa-instagram"></i>
+							</a>
+							</div>
+						</div>
+						<div class="row twitter-feed">
+							<a class="twitter-timeline" href="https://twitter.com/cpkbrowser"  target="_blank" data-widget-id="546748279342776321"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container story">
+				<div class="row bottom-section-landing">
+					<div class="col-md-6 col-sm-12">
+						<div class="landing-video">
+							<iframe class="tut-vid" width="100%" height="315" src="//www.youtube.com/embed/videoseries?list=PLj2yhd2ddoQvic1zNCBNZ0PN_dfpEd-tj" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<h4 class="catch-phase1">
+							Tell your friends to <br>
+							cancel their cable!
+						</h4>
+						<div class="tut-video-4app">
+							<a class="btn-primary tut-vid-4app" href="https://www.youtube.com/watch?v=JBh7Y05qpSY">CPK Mobile Tutorial Video</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sign Up -->
+		<div id="signup-container" style="display: none;">
+			<form id="frmUserSignup" action="#" method="post">
+		
+				<!-- #first_step -->
+				<div id="first_step">
+					<h1>SIGN UP FOR A FREE <span>CPK</span> ACCOUNT</h1>
+	
+					<div class="form">
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="text" name="username" id="username" value="username" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblUsername" for="username">Username (required): At least 4 characters. Uppercase letters, lowercase letters and numbers only.</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="password" name="password" id="password" value="password" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblPassword" for="password">Password (required): At least 4 characters. Use a mix of upper and lowercase for a strong password.</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="password" name="cpassword" id="cpassword" value="password" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblCPassword" for="cpassword">Password Check (required): If your passwords aren’t equal, you won’t be able to continue with signup.</label>
+							</div>
+						</div>
+						
+					</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+					<input class="submit" type="submit" name="submit_first" id="submit_first" value="" />
+				</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+	
+	
+				<!-- #second_step -->
+				<div id="second_step">
+					<h1>SIGN UP FOR A FREE <span>CPK</span> ACCOUNT</h1>
+	
+					<div class="form">
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="text" name="firstname" id="firstname" placeholder="first name" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblFirstname" for="firstname">(required) Your First Name. </label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="text" name="lastname" id="lastname" placeholder="last name" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblLastname" for="lastname">(required) Your Last Name. </label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="text" name="email" id="email" placeholder="email address" />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblEmail" for="email">(required) Your email address. We send important administration notices to this address. </label>  
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<form action="#">
+									<input type="date" id="bday" name="bday">
+								</form>
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblBday">(required) Your birthdate is verified for access to mature content.</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<form>
+									<input type="tel" name="phone" id="phone" max-length="10" placeholder="phone number" />
+								</form>
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblPhone">(required) Your phone number is used for activation and to connect your computer to your phone. We promise we won't use it for any other reason.</label>
+							</div>
+						</div>
+										
+					</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+					<input class="submit" type="submit" name="submit_second" id="submit_second" value="" />
+				</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+	
+	
+				<!-- #third_step -->
+				<div id="third_step">
+					<h1>SIGN UP FOR A FREE <span>CPK</span> ACCOUNT</h1>
+	
+					<div class="form">
+	
+						<div class="row">
+							<div class="col-sm-7">
+								<select id="age" name="age">
+									<option> 0 - 17</option>
+									<option>18 - 25</option>
+									<option>26 - 40</option>
+									<option>40+</option>
+								</select>
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblAge" for="age">Your age range. </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<select id="gender" name="gender">
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblGender" for="gender">Your Gender. </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input TYPE="text" id="country-signup" NAME="country">
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblCountry" for="country">Your Country (required, please choose from autocomplete options) </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input TYPE="text" id="zip" NAME="zip" SIZE="5" MAXLENGTH="5">
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblZip" for="country">Region Code (Zip / Postal Code). </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<input type="text" name="referred-by" id="referred-by" value=" " />
+							</div>
+							<div class="col-sm-5">
+								<label id="sgnLblReferred" for="firstname">(required) How did you find us?</label>
+							</div>
+						</div>
+						
+					</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+					<input class="submit" type="submit" name="submit_third" id="submit_third" value="" />
+					
+				</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+				
+				
+				<!-- #fourth_step -->
+				<div id="fourth_step">
+					<h1>SIGN UP FOR A FREE <span>CPK</span> ACCOUNT</h1>
+	
+					<div class="form">
+						<h2>Summary</h2>
+						
+						<table>
+							<tr><td>Username</td><td></td></tr>
+							<tr><td>Password</td><td></td></tr>
+							<tr><td>Email</td><td></td></tr>
+							<tr><td>Birthday</td><td></td></tr>
+							<tr><td>Phone</td><td></td></tr>
+							<tr><td>zip</td><td></td></tr>
+						</table>
+					</div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+					<p style="padding-right:25px; text-align:right;">
+					By signing up you agree to the <a href="http://www.cpktestapp2.herokuapp.com/tos" target="_blank">TOS</a> 
+					and have read our <a style="color:red;" href="http://www.cpktestapp2.herokuapp.com/privacy">Privacy Policy</a></p>
+					<input class="send submit" type="submit" name="submit_fourth" id="submit_fourth" value="" />
+	
+				</div>
+				
+			</form>
+			<div id="progress_bar">
+				<div id="progress"></div>
+				<div id="progress_text">0% Complete</div>
+			</div>
+		</div>
+		<div class="spacing">
+		</div>	
+		<div id="cpkFooter" class="container-fluid footer">
+			<div class="back-to-top" id="backToTop">
+				<i class="fa fa-chevron-up"></i>
+			</div>
+			<div class="bottom-section">
+				<div class="row row-reset">
+					<div class="col-sm-6">
+						<div class="makers">
+							© 2015 CPK Browser
+							<!-- Makers:
+							<strong>Programmer:</strong> Kyle Brown<br>
+							<strong>Web Design:</strong> Shawn Brandt -->
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="common-links">
+							<ul>
+							<li><a style="cursor: pointer;" onclick="openCPKLinks('legal')">Legal</a></li>
+							<li><a style="cursor: pointer;" onclick="openCPKLinks('privacy')">Privacy</a></li>
+							<li><a style="cursor: pointer;">CPK Lens</a></li>
+							<li><a style="cursor: pointer;" onclick="openCPKLinks('faq')">FAQs</a></li>
+							<li><a style="cursor: pointer;" onclick="openCPKLinks('logout')">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="usrInfo" style="display: none;">
+			<p id="userInfo_ID">null</p>
+			<p id="userInfo_username">null</p>
+			<p id="userInfo_gender">m</p>
+			<p id="userInfo_age">2</p>
+		</div>
+		<!-- #cpk_popShows - Popular On CPK -->
+		<div id="hdn_tblPopular" style="display: none;"></div>
+		<!-- #cpk_favShows - User Profile List of Favorite Shows -->
+		<div id="hdn_tblFavorites" style="display: none;"></div>
+		<!-- #cpk_recShows - User Profile List of Recently Watched Shows -->
+		<div id="hdn_tblRecent" style="display: none;"></div>
+		<!-- #List of all non-standard bins-->
+		<div id="hdn_tblNonStandardBins" style="display: none;"></div>
+		<!-- #ShowInfo - custom table containing important values from search results -->
+		<div id="hdnValues" style="display: none;"></div>
+		<!-- #showEpisodes - Raw data from primewire tv show episode list -->
+		<div id="hdnValues2" style="display: none;"></div>
+		<!-- table (no id) - Holds an array of season lengths -->
+		<div id="hdnValues3" style="display: none;"></div>
+		<!-- #showLinks - raw html 'span' elements whose href values contains actual links for TV SHOWS -->
+		<div id="hdnValues4" style="display: none;"></div>
+		<!-- 2 text fields (no id) - first field = current season; second field = current episode -->
+		<div id="hdnValues5" style="display: none;"></div>
+		<!-- 2 elements (no id) - first element = list of links for current episode; second field = current link index -->
+		<div id="hdnValues6" style="display: none;"></div>
+		<!-- #showLinks - raw html 'span' elements whose href values contains actual links for MOVIES -->
+		<div id="hdnValues7" style="display: none;"></div>
+		<!-- Contains tool-tip information in li element -->
+		<div id="hdnValues8" style="display: none;"></div>
+		<div id="hdnSearchType" style="display: none;">tv</div>
+		<div id="hdnModalType" style="display: none;"></div>
+		<div id="hdnQuickLink" style="display: none;">false</div>
+		<div id="basic-modal-content">
+			<div class="info-pane" id="mdlInfoPane">
+				<div class="row info-pane-max">
+					<div class="col-sm-3">
+						<a class="info-pic" href="#"> <img id="mdlInfo_Img" class="info-thumb-img" src="../public/images//placeholder.png">
+						</a>
+						<div style="width: 150px; height 30px; display: none;" class="play-button" id="mdlStartMovie">
+							<div class="btn-primary float-button">
+								<button class="btn-toggle" onclick="startMovie();" type="button">
+									<div class="btn-primary-txt">Play Movie</div>
+								</button>
+							</div>
+						</div>
+						<div style="width: 150px; height 30px; display: none;" class="play-button" id="mdlKeepWatch">
+							<div class="btn-primary float-button">
+								<button class="btn-toggle" onclick="ContinueShow();" type="button">
+									<div class="btn-primary-txt">Keep Watching</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div id="mdlInfo" class="col-sm-9">
+						<div class="detail-wrap">
+							<h4 id="mdlInfo_Name" class="title-info-pane" style="color:black;">Title of Movie or Episode</h4>
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs info-nav-tabs" role="tablist">
+								<li class="active"><a href="#main-details" class="main-detials-color" style="color:black" role="tab" data-toggle="tab">Details</a></li>
+								<li><a id="mdlInfo_tabLinks" href="#links" class="nav-links-spacing" role="tab" style="color:black; display: none;" data-toggle="tab">Links</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="main-details">
+										<h6 id="mdlInfo_Year" class="date" style="color:black;"></h6>
+										<h6 id="mdlInfo_Genre" class="tags" style="color:black;"></h6>
+										<p id="mdlInfo_Desc" class="info" style="color:black; width: 100%;"></p>
+										<p id="mdlInfo_Link" style="display: none;"></p>
+										<p id="mdlActive_Div" style="display: none;"></p>
+										<p id="mdlInfo_Actors" style="display: none;"></p>
+								</div>
+								<div class="tab-pane" id="links">
+									<div id="lnkAccordion" style="width: 100%; max-height: 180px; overflow: auto;">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div id="mdlMoviePane">
+				<!-- <iframe style="width: 100%; height: 800px;" src="about:blank" sandbox="allow-forms allow-same-origin allow-scripts allow-pointer-lock"></iframe>  -->
+				<div id="helpCntrlContainer" class="help-control">
+					<i class="fa fa-info-circle help-icon"></i>
+					<div id="helpContainer" style=" width: 250px; height: auto; display: none;">
+						<p class="tool-tip-source" id="mdlToolTipType">test name</p>
+						<p class="tool-tip-info" id="mdlExtToolTip">test value</p>
+					</div>
+				</div>
+				<div id="navCntrlContainer" class="nav-control">
+					<div id="mdlNavButtons" align="left" style="width: 100%;">
+						<div id="btnNavInfo" style="color: white; margin-left: 28px; padding-bottom: 10px; float: left;">
+							<i class="fa fa-bars"></i>
+						</div>
+						<div id="navContainer" class="row" style="display:none">
+							<div class="col-xs-12 link-placement">
+								<p style="text-align: right; color: #ffffff; cursor: pointer; display: inline-block;" onclick="loadPreviousLink(); return false;">  
+								<i class="fa fa-step-backward icon-hover"></i>
+								
+								</p>
+								<p style="display: inline-block; color: #ffffff; padding-left: 0px; padding-right: 0px;"> <span style="padding: 0px 22px 0px 22px;" class="nav-link-design">Link</span> </p>
+								<p style="text-align: right; color: #ffffff; cursor: pointer; display: inline-block;" onclick="loadNextLink(); return false;">
+								<i class="fa fa-step-forward icon-hover"></i>
+								</p>
+								<p style="padding-left: 0px; padding-right: 0px; display: inline-block;"> </p>
+							</div>
+							<div class="col-xs-12 link-placement">
+								<div id="mdlNavEpisodes" style="inline-block">
+									<p style="text-align: left; color: #ffffff; cursor: pointer; display: inline-block;" onclick="loadPreviousEpisode(); return false;">
+									<i class="fa fa-fast-backward icon-hover"></i>
+									</p>
+									<p style="display: inline-block; color: #ffffff; padding-left: 0px; padding-right: 0px;">
+									<span class="nav-link-design">
+										Episode
+									</span>
+									</p>
+									<p style="text-align: left; color: #ffffff; cursor: pointer; display: inline-block;" onclick="loadNextEpisode(); return false;">
+									<i class="fa fa-fast-forward icon-hover"></i>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+				<iframe id="mdlVideoFrame" class="video-frame" style="width: 100%; height: 800px;" src="about:blank" frameborder="0"></iframe>				
+			</div>
+		</div>
+    </body>	
+	
+</html>
